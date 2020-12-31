@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <link rel="stylesheet" href="home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+    <div class="topnav" id="myTopnav">
+        <a href="#home">Aqua Water Solution</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <form method="post" action="sms.php" class="form-class">
+        <div class="main-form">
+            <table>
+                <tr>
+                    <td>Customer Name: </td>
+                    <td>
+                        <input type="text" name="nm" id="nm" placeholder="Enter Customer Name" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mobile Number: </td>
+                    <td>
+                        <input type="number" name="phone" id="phone" placeholder="Enter Phone Number" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Select Product: </td>
+                    <td>
+                        <select id="product">
+                            <option value="">Choose a Product</option>
+                            <option value="saab">Saab</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Price: </td>
+                    <td>
+                        <input type="number" name="price" id="price" placeholder="Enter Price" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>First Installment: </td>
+                    <td>
+                        <input type="number" name="first" id="first" placeholder="Enter 1st installment price" />
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="date" name="dt1" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Second Installment: </td>
+                    <td>
+                        <input type="number" name="second" id="second" placeholder="Enter 2nd installment price" />
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="date" name="dt2" />
+                    </td>
+                </tr>
+                <!-- <tr>
+                            <td>Message: </td>
+                            <td>
+                                <textarea rows="10" cols="100" name="txt" placeholder="Enter Message Here..."></textarea>
+                            </td>
+                        </tr> -->
+                <tr>
+                    <td><input type="submit" name="btn" value="Send" /></td>
+                </tr>
+            </table>
+        </div>
+          <div class="khatabook">
+              <h2>Khatabook</h2>
+              <textarea name="txt" cols="30" rows="30" style="max-width:70%;max-height: 80%;" placeholder="Enter Message Here..."></textarea>
+              <br><button>Save</button>
+          </div>
+    </form>
+
+
+
+
+    <!-- <form method="post" action="sms.php">
+        <table align="center">
+            <tr>
+                <td>Customer Name: </td>
+                <td>
+                    <input type="text" name="nm" id="nm" placeholder="Enter Customer Name" />
+                </td>
+            </tr>
+            <tr>
+                <td>Mobile Number: </td>
+                <td>
+                    <input type="number" name="phone" id="phone" placeholder="Enter Phone Number" />
+                </td>
+            </tr>
+            <tr>
+                <td>Select Product: </td>
+                <td>
+                    <select id="product">
+                        <option value="">Choose a Product</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Price: </td>
+                <td>
+                    <input type="number" name="price" id="price" placeholder="Enter Price" />
+                </td>
+            </tr>
+            <tr>
+                <td>First Installment: </td>
+                <td>
+                    <input type="number" name="first" id="first" placeholder="Enter 1st installment price" />
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="date" name="dt1" />
+                </td>
+            </tr>
+            <tr>
+                <td>Second Installment: </td>
+                <td>
+                    <input type="number" name="second" id="second" placeholder="Enter 2nd installment price" />
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="date" name="dt2" />
+                </td>
+            </tr>
+            <tr>
+                <td>Message: </td>
+                <td>
+                    <textarea rows="10" cols="100" name="txt" placeholder="Enter Message Here..."></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" name="btn" value="Send" /></td>
+            </tr>
+        </table>
+    </form> -->
+
+</body>
+
+</html>
