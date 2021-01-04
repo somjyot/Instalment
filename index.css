@@ -13,6 +13,24 @@
   z-index: 200 !important;
 }
 
+.parent-dialog{
+  width: 100%;
+  display: flex;
+}
+.dialog-class-form{
+  width: 70%;
+}
+.dialog-class{
+  width: 30%;
+}
+
+@media (min-width: 768px){
+.form-horizontal .control-label {
+    text-align: left;
+}
+
+}
+
 .panel-body {  
   
   background: #e5e5e5; /* Old browsers */
